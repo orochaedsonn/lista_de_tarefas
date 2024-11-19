@@ -12,3 +12,4 @@ $(document).ready(function() {
     $(this).toggleClass('concluido');
   });
 });
+//fim do programa.
