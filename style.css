@@ -1,0 +1,82 @@
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #F0F0F2;
+}
+
+header {
+  background-color: #5852F2;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#form-tarefa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nome-tarefa {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+#btn-adicionar {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #F2B441;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-tarefas li {
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
+  cursor: pointer;
+}
+
+#lista-tarefas li.concluido {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  #form-tarefa {
+    flex-direction: column;
+  }
+  #nome-tarefa {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #btn-adicionar {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
